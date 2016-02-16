@@ -6,4 +6,14 @@
     <string name="regions">regions</string>
     <string name="subregions">subregions</string>
     <string name="countries">countries</string>
+    <string name="name_string">"name: "</string>
+    <string name="region_string">"region: "</string>
+    <string name="subregion_string">"subregion: "</string>
+    <string name="capital_string">"capital: "</string>
+    <string name="population_string">"population: "</string>
+    <string name="area_string">"area: "</string>
+    <string name="regions_string">regions</string>
+    <string name="subregions_string">subregions</string>
+    <string name="countries_string">countries</string>
+    <string name="info_string">info</string>
 </resources>
