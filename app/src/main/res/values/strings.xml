@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android. Part V Task 1.1</string>
+    <string name="button_regions_text">Regions</string>
+    <string name="button_subregions_text">Sub regions</string>
+    <string name="button_countries_text">Countries</string>
+    <string name="regions">regions</string>
+    <string name="subregions">subregions</string>
+    <string name="countries">countries</string>
+</resources>
