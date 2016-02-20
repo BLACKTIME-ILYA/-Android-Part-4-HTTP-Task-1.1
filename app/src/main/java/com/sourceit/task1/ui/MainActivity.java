@@ -180,9 +180,7 @@ public class MainActivity extends AppCompatActivity {
                         currentObjects.add(objectType.getSubregion());
                     }
                 } else if (currentList.equals(countries)) {
-                    if (!currentObjects.contains(objectType.getName())) {
                         currentObjects.add(objectType.getName());
-                    }
                 }
             } else {
                 if (currentList.equals(regions)) {
