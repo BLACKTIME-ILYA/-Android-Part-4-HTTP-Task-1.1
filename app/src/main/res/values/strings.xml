@@ -16,4 +16,5 @@
     <string name="subregions_string">subregions</string>
     <string name="countries_string">countries</string>
     <string name="info_string">info</string>
+    <string name="languages_string">Languages:</string>
 </resources>

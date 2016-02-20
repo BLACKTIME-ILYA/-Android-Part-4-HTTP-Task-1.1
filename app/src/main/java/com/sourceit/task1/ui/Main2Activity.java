@@ -3,10 +3,13 @@ package com.sourceit.task1.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.sourceit.task1.R;
 import com.sourceit.task1.utils.L;
+
+import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -16,6 +19,7 @@ public class Main2Activity extends AppCompatActivity {
     private TextView tv_capital;
     private TextView tv_population;
     private TextView tv_area;
+    private LinearLayout languagesList;
 
     private String name;
     private String region;
@@ -23,6 +27,7 @@ public class Main2Activity extends AppCompatActivity {
     private String capital;
     private String population;
     private String area;
+    private ArrayList<String> languages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +52,17 @@ public class Main2Activity extends AppCompatActivity {
         tv_capital.setText(capital + objectType.getCapital());
         tv_population.setText(population + objectType.getPopulation());
         tv_area.setText(area + objectType.getArea());
+
+        languages = objectType.getLanguages();
+        for (int i = 0; i < languages.size(); i++) {
+            TextView lang = new TextView(this);
+            lang.setText(languages.get(i));
+            languagesList.addView(lang);
+        }
     }
 
     private void init() {
+        languagesList = (LinearLayout) findViewById(R.id.languages_list);
         tv_name = (TextView) findViewById(R.id.info_name);
         tv_region = (TextView) findViewById(R.id.info_region);
         tv_subregion = (TextView) findViewById(R.id.info_subregion);
